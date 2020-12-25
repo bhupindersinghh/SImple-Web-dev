@@ -14,7 +14,8 @@
                 <img src="shopping-cart.png" style="height: 90px; width: 90px;">
             </div>
             
-                <div class="nav-links">
+                <div class="nav-links" id="nav-links">
+                    <i class="fa fa-cross" onclick="closeMenu()"></i>
                     <ul>
                         <a href="#"><li>HOME</li></a>
                         <a href="#"><li>ABOUT</li></a>
@@ -22,6 +23,7 @@
                     </ul>
                     <button type="button"class="button">SIGN UP</button>
                 </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
 
             </div>
             <div class="banner">
@@ -43,7 +45,7 @@
             <div class="notification">
                 <div class="content">
                     <small>BUY NOW</small>
-                    <p><a href="">PREV</a> <a href="">NEXT</a></p>
+                    <p><a href="" style="margin-left: 50px; margin-top: 30px;">PREV</a> <a href="">NEXT</a></p>
                 </div>
 
                 <div class="notification-tag">
@@ -51,5 +53,14 @@
                 </div>
             </div>
         </div>
+        <script>
+            var show = document.getElementById("nav-links");
+            function showMenu(){
+                show.style.right = "0";
+            }
+            function closeMenu(){
+                show.style.right = "-200px";
+            }
+        </script>
     </body>
 </html>
