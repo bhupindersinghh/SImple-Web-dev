@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+.btn{
+    height: 40px;
+    width: 50px;
+    margin: 2px;
+    border-radius: 15%;
+    font-size: 25px;
+}
+.textview{
+    width: 220px;
+    height: 40px;
+    margin: 2px;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: red;
+    padding: 15px;
+    border-radius: 15%;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:black;
+    opacity: 1; /* Firefox */
+  }
+  
