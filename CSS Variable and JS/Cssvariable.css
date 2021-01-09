@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --spacing: 10px;
+    --backcolor: #ffffff;
+    --blur: 10px;
+}
+.in{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.imgs{
+    top: 30%;
+    left: 25%;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    padding: var(--spacing);
+    background: var(--backcolor);
+    filter: blur(var(--blur));
+}
+.JS{
+    color: var(--backcolor);
+}
