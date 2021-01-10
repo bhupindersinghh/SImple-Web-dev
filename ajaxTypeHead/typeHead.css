@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.search-form{
+    background: url(https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1650&q=80);
+    /* background-position: center; */
+    /* background-size: 100vh; */
+    /* height: 900px;  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.pp{
+    margin-top: 100vh;
+    align-self: flex-start;
+}
+
+.searchbar{
+    height: 50px;
+    width: 300px;
+    border-radius: 2%;
+    border: 5px rgb(178, 184, 158) solid;
+    margin-top: 150px;
+    font-size: 22px;
+    text-align: center;
+}
+.suggestions{
+    list-style: none;
+    padding: 10px;
+    /* background: white; */
+    /* border: 2px black solid; */
+    /* border-top: 0; */
+    width: 250px;
+    margin-top: -13px;
+
+}
+
+.suggestions li{
+    /* border-bottom: 1px black solid; */
+    padding: 10px;
+    text-transform: capitalize;
+    /* transition: background: 0.2s; */
+    background: white;
+}
+
+.suggestions li:nth-child(even){
+    transform: perspective(100px) rotateX(5deg) translateY(2px) scale(1.001);
+  background: linear-gradient(to bottom,  #ffffff 0%,rgb(178, 184, 158) 100%);
+}
+.suggestions li:nth-child(odd) {
+    transform: perspective(100px) rotateX(-5deg) translateY(3px);
+    background: linear-gradient(to top, #ffffff 0%,rgb(178, 184, 158) 100%);
+  }
+::placeholder{
+    font-size: 20px;
+    text-align: center;
+}
