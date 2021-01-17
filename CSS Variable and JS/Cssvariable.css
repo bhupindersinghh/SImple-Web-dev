@@ -2,15 +2,15 @@
     padding: 0;
     margin: 0;
 }
-:root{
-    --spacing: 10px;
-    --backcolor: #ffffff;
-    --blur: 10px;
-}
 .in{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+:root{
+    --spacing: 10px;
+    --backcolor: #ffffff;
+    --blur: 10px;
 }
 .imgs{
     top: 30%;
@@ -18,6 +18,8 @@
     position: absolute;
     width: 50%;
     height: 50%;
+}
+img{
     padding: var(--spacing);
     background: var(--backcolor);
     filter: blur(var(--blur));
